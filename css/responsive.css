@@ -1,0 +1,183 @@
+@media only screen and (max-width : 1600px) { /*Container de Sobre*/
+    img#fotoequipe{
+        min-width: none;
+        width: 50%;
+    }
+
+    article#texto-sobre{
+        width: 100%;
+        margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-width : 1200px) { /*Container do Formulário*/
+    form#form{
+        align-items: center;
+        width: 100%;
+    }
+
+    form#form > h2{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+    
+    section#form-box{
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+    }
+
+    img#resp-img2{
+        display: none;
+    }
+
+    /*Menu Responsivo*/
+    div#menu-mobile{
+        display: block;
+    }
+
+    button#subir{
+        display: none;
+    }
+
+    :target{ /*Estilização do Scroll */
+        scroll-margin-top: 10rem;
+    }
+
+    header{
+        position: fixed;
+        box-shadow: none;
+    }
+
+    nav#menu{
+        transition: 0.6s ease-in-out;
+    }
+
+    nav#menu ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #072097;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        text-align: center;
+        width: 50%;
+        height: 0px;
+        z-index: 1000;
+        transition: .6s ease-in;
+        visibility: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    /*Links da Lista*/
+    nav#menu > ul > li > a{
+        padding: 11vh 50vw;
+        transition: .7s;
+    }
+
+    #menu.ativa ul{
+        display: flex;
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    #menu-mobile #linha1, #linha2, #linha3{
+        position: relative;
+        transition: 0.3s;
+    }
+
+    #menu-mobile.animacao #linha1, #linha3{
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #menu-mobile.animacao #linha1{
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    #menu-mobile.animacao #linha2{
+        opacity: 0;
+    }
+
+    #menu-mobile.animacao #linha3{
+        transform: rotate(45deg) translate(-5px, -7px); 
+    }
+}
+
+@media only screen and (max-width : 950px) { /*Container de Apresentação e */
+    html{
+        font-size: 58%;
+    }
+
+    img.decoracao{
+        display: none;
+    }
+    
+    section#cont-apresentacao > img{
+        width: 60%;
+        height: 100%;
+        display: none;
+    }
+
+    article#texto-apresentacao{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    button#subir{
+        font-size: 3rem;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    section#cont-sobre > h2{
+        text-align: center;
+    }
+
+    img#fotoequipe{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width : 850px){ /*Formulário*/
+    section#form-box{
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px){ /*Principal e Rodapé*/
+    html{
+        font-size: 56%;
+    }
+
+    section#escolas > div{
+        min-width: 26rem;
+    }
+
+    section#cont-escolas > h2{
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    footer > img, p, nav{ 
+        margin: 3rem 0rem;
+    }
+}

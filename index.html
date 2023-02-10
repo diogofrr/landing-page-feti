@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto FETI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header id="topo"> <!--Cabeçalho-->
+        <img src="imagens/dianpe-logo-branco.png" alt="Logotipo da DIANPE"> <!--Logotipo-->
+        <nav id="menu"> <!--Barra de navegação-->
+            <ul> <!--Links da barra de navegação-->
+                <li><a href="#cont-apresentacao" class="botao">Home</a></li>
+                <li><a href="#cont-escolas" class="botao">Escolas</a></li>
+                <li><a href="#cont-opiniao" class="botao">Sugestões</a></li>
+                <li><a href="#cont-sobre" class="botao">Sobre</a></li>
+            </ul>
+        </nav>
+        <div id="menu-mobile" aria-expanded="false">
+            <div id="linha1"></div>
+            <div id="linha2"></div>
+            <div id="linha3"</div>
+        </div>
+    </header>
+    <main> <!--Conteúdo Principal-->
+        <section class="cont" id="cont-apresentacao"> <!--Container de Apresentação-->
+            <img src="imagens/img-c0.svg" alt="Alunos com diploma" id="resp-img1"> <!--Imagem lateral-->
+            <article id="texto-apresentacao"> <!--Texco de apresentação-->
+                <h2>Defina seu futuro!</h2>
+                <p>Seja você o percursor de um futuro de sucesso através dos cursos técnicos e profissionalizantes.</p>
+                <a href="#cont-escolas"><button type="button">Ver escolas</button></a>
+            </article>
+            <img src="imagens/bola-c1-1.png" alt="Forma decorativa" class="decoracao" id="imgd1"> <!--Imagem decorativa-->
+            <img src="imagens/bola-c1-2.png" alt="Forma decorativa" class="decoracao" id="imgd2"> <!--Imagem decorativa-->
+        </section>
+        <section class="cont" id="cont-escolas"> <!--Container com escolas-->
+            <h2>Escolas Técnicas</h2> <!--Título das escolas-->
+            <section id="escolas"> <!--Container com as escolas-->
+                <div> <!--Senac-->
+                    <img src="imagens/letra-a.jpg" alt="Logotipo A">
+                    <p class="nome-escola">Escola A</p>
+                    <p class="descricao-escola">Conheça o Escola A e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <div> <!--Grau Técnico-->
+                    <img src="imagens/letra-b.jpg" alt="Logotipo B">
+                    <p class="nome-escola">Escola B</p>
+                    <p class="descricao-escola">Conheça o Escola B e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <div> <!--Senai-->
+                    <img src="imagens/letra-c.png" alt="Logotipo C">
+                    <p class="nome-escola">Escola C</p>
+                    <p class="descricao-escola">Conheça o Escola C e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <div> <!--Colégio Profissional-->
+                    <img src="imagens/letra-d.png" alt="Logotipo D">
+                    <p class="nome-escola">Escola D</p>
+                    <p class="descricao-escola">Conheça o Escola D e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <div> <!--Faculdade do Trabalho-->
+                    <img src="imagens/letra-e.jpg" alt="Logotipo E">
+                    <p class="nome-escola">Escola E</p>
+                    <p class="descricao-escola">Conheça Escola E e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <div> <!--IFTM-->
+                    <img src="imagens/letra-f.jpg" alt="Logotipo F">
+                    <p class="nome-escola">Escola F</p>
+                    <p class="descricao-escola">Conheça Escola F e veja quais cursos estão disponíveis.</p>
+                    <button type="button">Saiba mais</button>
+                </div>
+                <img src="imagens/bola-c2-1.png" alt="Forma decorativa" class="decoracao" id="imgd3"> <!--Imagem decorativa-->
+                <img src="imagens/bola-c2-2.png" alt="Forma decorativa" class="decoracao" id="imgd4"> <!--Imagem decorativa-->
+            </section>
+        </section>
+        <section class="cont" id="cont-opiniao"> <!--Container do formulário de opinião-->
+            <form id="form"> <!--Container do Formulário-->
+                <h2>Nos dê sua sugestão de curso</h2> <!--Título do Container-->
+                <section id="form-box"> <!--Container dos Inputs-->
+                    <div class="form-titebox"> <!--Box de Nome-->
+                        <p>Nome Completo</p>
+                        <img src="imagens/interroga.png" alt="Interrogação" class="interroga" id="nome-i">
+                    </div>
+                    <input type="text" class="caixas" id="nome" placeholder="Insira seu nome completo aqui">
+                    <div class="form-titebox"> <!--Box do Email-->
+                        <p>E-mail</p>
+                        <img src="imagens/interroga.png" alt="Interrogação" class="interroga" id="email-i">
+                    </div>
+                    <input type="email" class="caixas" id="email" placeholder="Insira seu e-mail aqui">
+                    <div class="form-titebox"> <!--Box do Telefone-->
+                        <p>Telefone</p>
+                        <img src="imagens/interroga.png" alt="Interrogação" class="interroga" id="telefone-i">
+                    </div>
+                    <input type="tel" class="caixas"  id="telefone" placeholder="Insira seu telefone aqui">
+                    <div class="form-titebox"> <!--Box do Curso-->
+                        <p>Curso de interesse</p>
+                        <img src="imagens/interroga.png" alt="Interrogação" class="interroga" id="curso-i">
+                    </div>
+                    <input type="text" class="caixas" id="curso" placeholder="Insira seu curso de interesse aqui">
+                    <div class="form-titebox"> <!--Box de Observações -->
+                        <p>Observações</p> 
+                        <img src="imagens/interroga.png" alt="Interrogação" class="interroga" id="obs-i">
+                    </div>
+                    <textarea id="obs" placeholder="Insira alguma observação aqui"></textarea>
+                    <p id="lgpd">* Todos os seus dados serão usados de acordo com as normas da Lei Geral de Proteção de Dados.</p> <!--LGPD-->
+                    <button type="button">Enviar minha sugestão</button>
+                </section>
+                <img src="imagens/bola-c3-direita.png" alt="Forma decorativa" class="decoracao" id="imgd5"> <!--Imagem decorativa-->
+                <img src="imagens/bola-c3-esquerda.png" alt="Forma decorativa" class="decoracao" id="imgd6"> <!--Imagem decorativa-->
+            </form>
+            <img src="imagens/img-c1.svg" alt="Mulher estudando" id="resp-img2"> <!--Imagem lateral ao conteúdo-->
+        </section>
+        <section class="cont" id="cont-sobre"> <!--Container Sobre-->
+            <h2>Sobre o Projeto</h2> <!--Título do Container-->
+            <section id="cont-sobre-imgt">
+                <img src="imagens/sobre.png" alt="Foto da Equipe" id="fotoequipe"> <!--Imagem que fica por cima do quadrado-->
+                <article id="texto-sobre">
+                    <p>
+                        É bastante comum encontrar jovens que saem do ensino médio sem uma perspectiva ou uma possibilidade clara de profissionalização. Infelizmente, isso também acontece com quem se graduou ou está prestes a se graduar. E ainda com o diploma em mãos, algumas pessoas se sentem despreparadas em relação ao exercício de uma profissão e, mais do que isso, sem um planejamento ou uma ideia de continuidade. Mediante a problemática, os cursos técnicos e profissionalizantes são excelentes opções, que, possibilitam uma formação mais curta e uma rápida inserção no competitivo mercado de trabalho. E não para por aí: a modalidade de ensino ainda é capaz de melhorar o currículo, as perspectivas de carreira e diversificar habilidades. Trazendo a tona a oportunidade de atuar em uma profissão antes mesmo de ingressar na faculdade.
+                    </p>
+                </article>
+            </section>
+        </section>
+        <a href="#"><button type="button" id="subir">↑</button></a>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>Copyright © 2023 - FETI | Todos os direitos reservados.</p>
+        <!-- <nav id="icons">
+            <a href="#"><img src="imagens/facebook.png" alt="Logotipo do Facebook"></a>
+            <a href="#"><img src="imagens/instagram.png" alt="Logotipo do Instagram"></a>
+            <a href="#"><img src="imagens/youtube.png" alt="Logotipo do Youtube"></a>
+        </nav> -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.35/dist/sweetalert2.all.min.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>
